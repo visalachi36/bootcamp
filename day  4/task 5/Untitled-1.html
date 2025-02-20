@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <style>
+        body {
+            background-image: url(images.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container {
+            background-color:#62b6cb;
+            padding: 50px;
+            border-radius: 50px;
+            text-align: center;
+            opacity: 0.7;
+        }
+        .display {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .start { background-color: #4caf50; color: white; }
+        .stop { background-color: #f44336; color: white; }
+        .reset { background-color: #008cba; color: white; }
+        h1{
+            text-align: center;
+            color: #231942;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>TIMER</h1>
+        <div class="display" id="timer">00:00:00</div>
+        <button class="start" onclick="startTimer()">Start</button>
+        <button class="stop" onclick="stopTimer()">Stop</button>
+        <button class="reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script>
+        let timer;
+        let isRunning = false;
+        let seconds = 0;
+
+        function formatTime(sec) {
+            let hrs = Math.floor(sec / 3600).toString().padStart(2, '0');
+            let mins = Math.floor((sec % 3600) / 60).toString().padStart(2, '0');
+            let secs = (sec % 60).toString().padStart(2, '0');
+            return `${hrs}:${mins}:${secs}`;
+        }
+
+        function startTimer() {
+            if (!isRunning) {
+                isRunning = true;
+                timer = setInterval(() => {
+                    seconds++;
+                    document.getElementById('timer').innerText = formatTime(seconds);
+                }, 1000);
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+            isRunning = false;
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            isRunning = false;
+            seconds = 0;
+            document.getElementById('timer').innerText = "00:00:00";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 200px;
+            background-image: url('images/nature.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        
+        }
+        .toggle-btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            
+        }
+        .toggle-btn:hover {
+            background-color: #0056b3;
+        }
+        .toggle-btn4{
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color:white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Interactive Content Sections</h1>
+    
+    <button class="toggle-btn" onclick="toggleContent('section1')"> BUTTON 1</button>
+    <div id="section1" class="content">
+        <img src="images/rose.jpg">
+        <p>A flower with a sweet smell, that grows on a bush that usually has sharp points (thorns) growing on it.</p>
+    </div>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

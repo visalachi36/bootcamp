@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            background: url('photo-1550164682-2927e311a4fe.avif') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: rgba(77, 152, 184, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+            width: 50%;
+            max-width: 600px;
+            color: #866464;
+        }
+        input {
+            padding: 15px;
+            margin: 15px;
+            border: 1px solid #140a0a;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 80%;
+            transition: all 0.3s ease;
+        }
+        input:focus {
+            background: rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+        button {
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature Converter</h2>
+        <input type="number" id="celsius" placeholder="°Celsius" oninput="convertToFahrenheit()">
+        <input type="number" id="fahrenheit" placeholder="°Fahrenheit" oninput="convertToCelsius()">
+        <button onclick="resetFields()">Reset</button>
+    </div>
+
+    <script>
+        function convertToFahrenheit() {
+            let celsius = document.getElementById("celsius").value;
+            if (celsius !== "") {
+                document.getElementById("fahrenheit").value = (celsius * 9/5) + 32;
+            } else {
+                document.getElementById("fahrenheit").value = "";
+            }
+        }
+        
+        function convertToCelsius() {
+            let fahrenheit = document.getElementById("fahrenheit").value;
+            if (fahrenheit !== "") {
+                document.getElementById("celsius").value = (fahrenheit - 32) * 5/9;
+            } else {
+                document.getElementById("celsius").value = "";
+            }
+        }
+        
+        function resetFields() {
+            document.getElementById("celsius").value = "";
+            document.getElementById("fahrenheit").value = "";
+        }
+    </script>
+</body>
+</html>
