@@ -1,0 +1,11 @@
+HTML Components:
+
+<form> → Wraps all input fields.
+<input> → Accepts user data.
+<label> → Describes input fields.
+<button> → Submits the form.
+ CSS Components:
+
+border & padding → Improves input field design.
+:focus → Highlights active input fields.
+error styling → Colors invalid inputs in red
