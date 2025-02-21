@@ -1,1 +1,16 @@
-HELLO
+HTML :
+<input type="number" id="tempInput"> → Input field for temperature
+<select id="unitSelector"> → Dropdown to choose unit
+<button id="convertBtn"> → Convert button
+<p id="result"> → Displays the converted temperature
+
+CSS :
+padding: 10px; → Styles inputs and buttons
+border-radius: 5px; → Rounds edges
+color: #333; → Text color for readability
+
+JavaScript :
+parseFloat(document.getElementById("tempInput").value) → Converts input to a number
+if-else → Checks which unit is selected
+innerText → Updates the result text
+onclick → Runs the conversion function when the button is clicked
