@@ -1,1 +1,15 @@
-HELLO
+HTML :
+<div class="slider"> → Container for images
+<img> → Image elements inside the slider
+<button class="prev"> and <button class="next"> → Navigation buttons
+
+CSS :
+overflow: hidden; → Hides overflowing images
+display: flex; → Aligns images in a row
+transition: transform 0.5s ease-in-out; → Creates smooth sliding animation
+
+JavaScript :
+querySelectorAll(".slider img") → Selects all images
+addEventListener("click", function) → Detects button clicks
+setInterval() → Automatically changes images at intervals
+style.transform = "translateX()" → Moves images left/right
