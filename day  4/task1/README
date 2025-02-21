@@ -1,1 +1,14 @@
-HELLO
+
+HTML :
+<button id="toggleBtn">Toggle Content</button> → Button to show/hide content
+<div id="content">Hidden Text</div> → Content to be toggled
+
+CSS :
+display: none; → Initially hides content
+transition: 0.3s ease-in-out; → Smooth animation
+.active { display: block; } → Shows content when active
+
+JavaScript :
+document.getElementById("toggleBtn") → Selects the button
+classList.toggle("active") → Adds or removes the active class
+onclick → Detects button click
