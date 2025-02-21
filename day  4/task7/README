@@ -1,1 +1,14 @@
-HELLO
+ HTML Components:
+
+<input>: To display numbers.
+<button>: For digits and operations.
+<div>: To group buttons.
+
+CSS Components:
+grid layout: To organize buttons in rows and columns.
+box-shadow: For a 3D button effect.
+
+JavaScript Components:
+eval() (or custom function): To perform calculations.
+click event listeners: For button functionality.
+innerText: To display results dynamically.
