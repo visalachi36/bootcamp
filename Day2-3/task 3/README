@@ -1,0 +1,12 @@
+HTML Components:
+
+<ul> <li> → Lists menu items.
+<img> → Displays food images.
+<h3> → Shows dish names.
+<p> → Provides descriptions.
+<span> → Highlights prices.
+ CSS Components:
+
+grid layout → Aligns items neatly.
+font-family → Gives a stylish menu look.
+hover effect → Highlights items when hovered over.
