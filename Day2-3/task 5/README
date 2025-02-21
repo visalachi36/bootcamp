@@ -1,0 +1,11 @@
+ HTML Components:
+
+<header> → Contains navigation links.
+<section> → Divides content into sections.
+<article> → Displays individual projects.
+<footer> → Contains contact info and social links.
+CSS Components:
+
+navbar styling → Designs a clean header.
+media queries → Makes it responsive.
+animations → Adds smooth transitions
