@@ -1,1 +1,12 @@
-HELLO
+ HTML Components:
+
+<input>: To enter time.
+<button>: To start, pause, and reset.
+<span>: To display time.
+ CSS Components:
+
+font-size: For large, readable digits.
+flexbox: To align elements properly.
+
+ JavaScript Components:
+`setInterval() & clear
