@@ -1,1 +1,16 @@
-HELLO
+HTML :
+<div class="modal"> → Hidden popup container
+<p>Modal Content</p> → Text inside the modal
+<button class="open-modal"> → Button to open
+<button class="close-modal"> → Button to close
+
+CSS :
+position: fixed; → Keeps the modal centered
+visibility: hidden; → Hides modal initially
+opacity: 0; → Starts invisible, gradually becomes visible
+
+JavaScript: 
+document.querySelector(".open-modal") → Finds the button
+modal.classList.add("show") → Displays the modal
+modal.classList.remove("show") → Hides the modal
+eventListener("click", closeModal) → Closes when clicked outside
