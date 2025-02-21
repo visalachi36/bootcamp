@@ -1,1 +1,15 @@
-HELLO
+HTML :
+<input type="text" id="taskInput"> → Input field for tasks
+<button id="addTask"> → Button to add tasks
+<ul id="taskList"> → List container for tasks
+
+CSS :
+border-radius: 5px; → Styles buttons and input fields
+hover { background-color: lightgray; } → Changes button color on hover
+text-decoration: line-through; → Crosses out completed tasks
+
+JavaScript :
+getElementById("taskInput") → Gets user input
+createElement("li") → Creates a new list item
+appendChild(taskItem) → Adds the task to the list
+removeChild(taskItem) → Deletes a task when clicked
