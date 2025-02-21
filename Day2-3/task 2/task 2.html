@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selling Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-container">
+        <img src="GOOD.jpg" alt="Product Image" class="product-image">
+        <div class="product-details">
+            <h2 class="product-title">Amazing Product</h2>
+            <p class="product-description">This is a high-quality product that meets all your needs. Available at an affordable price.</p>
+            <p class="product-price">$99.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #cdea7d;
+        margin: 0;
+    }
+    .product-container {
+        background: rgb(115, 198, 147);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .product-image {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    .product-title {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .product-description {
+        color: #555;
+        font-size: 16px;
+    }
+    .product-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #27ae60;
+        margin: 10px 0;
+    }
+    .buy-button {
+        background-color: #27ae60;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .buy-button:hover {
+        background-color: #219150;
+        transform: scale(1.1);
+    }
+</style>

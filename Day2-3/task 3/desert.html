@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Delicious Vishal - Desserts</h1>
+    </header>
+    
+    <section class="menu">
+        <h2>Our Sweet Treats</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm, rich chocolate cake with a gooey molten center.</p>
+                <span>₹59</span>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Cheesecake</h3>
+                <p>Classic New York-style cheesecake topped with fresh strawberries.</p>
+                <span>₹75</span>
+            </div>
+            <div class="menu-item">
+                <h3>Tiramisu</h3>
+                <p>Italian coffee-flavored dessert layered with mascarpone and cocoa.</p>
+                <span>₹90</span>
+            </div>
+            <div class="menu-item">
+                <h3>Ice Cream Sundae</h3>
+                <p>Vanilla ice cream topped with hot fudge, nuts, and a cherry.</p>
+                <span>₹50</span>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            text-align: center;
+        }
+        
+        /* Header */
+        header {
+            background-color: #d63384;
+            color: white;
+            padding: 50px 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        /* Menu Section */
+        .menu {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('download.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .menu h2 {
+            color: #c2185b;
+        }
+        
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .menu-item {
+            background: #ffcccb;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0.8;
+        }
+        
+        .menu-item h3 {
+            margin: 0;
+            color: #b71c1c;
+        }
+        
+        .menu-item p {
+            margin: 5px 0;
+        }
+        
+        .menu-item span {
+            font-weight: bold;
+            color: #4caf50;
+        }
+    </style>
+</body>
+</html>

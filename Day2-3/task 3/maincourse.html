@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Course Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Delicious Vishal - Main Course</h1>
+    </header>
+    
+    <section class="menu">
+        <h2>Our Main Course Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken served with roasted vegetables and garlic sauce.</p>
+                <span>$12.99</span>
+            </div>
+            <div class="menu-item">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Classic Italian pasta with creamy sauce, bacon, and Parmesan cheese.</p>
+                <span>₹230</span>
+            </div>
+            <div class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p>Rich and creamy Indian butter chicken served with naan or rice.</p>
+                <span>₹400</span>
+            </div>
+            <div class="menu-item">
+                <h3>Vegetable Biryani</h3>
+                <p>Fragrant rice cooked with mixed vegetables and aromatic spices.</p>
+                <span>₹130</span>
+            </div>
+        </div>
+    </section>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#F0FFF0;
+            text-align: center;
+            
+        }
+        
+        /* Header */
+        header {
+            background-color:#2E8B57;
+            color: white;
+            padding: 50px 0;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        /* Menu Section */
+        .menu {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('mainc.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        
+        .menu h2 {
+            color: #d54830;
+        }
+        
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .menu-item {
+            background:#89DAFF;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0.7;
+        }
+        
+        .menu-item h3 {
+            margin: 0;
+            color:red;
+        }
+        
+        .menu-item p {
+            margin: 5px 0;
+        }
+        
+        .menu-item span {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        </style>
+</body>
+</html>
