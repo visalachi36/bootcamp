@@ -1,0 +1,10 @@
+HTML Components:
+
+<img> → Displays the profile picture.
+<h1> → Shows the name.
+<p> → Provides a short description.
+CSS Components:
+
+border-radius: 50% → Makes the photo circular.
+text-align: center → Centers the profile details.
+margin & padding → Creates spacing for a clean look.
