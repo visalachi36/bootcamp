@@ -1,0 +1,12 @@
+ HTML :
+<div> → Wraps product details for styling.
+<img> → Displays the product image.
+<h2> → Shows the product name.
+<p> → Provides product description.
+<span> → Highlights price.
+<button> → Adds to cart or buy option.
+
+CSS :
+flexbox/grid → Aligns product layout.
+box-shadow → Gives a card-like effect.
+hover effects → Changes button color on hover.
