@@ -1,0 +1,12 @@
+HTML Components:
+
+<article> → Holds each blog post.
+<h2> → Displays blog titles.
+<p> → Shows content.
+<img> → Adds images to posts.
+
+CSS Components:
+
+grid/flexbox → Organizes posts in columns.
+media queries → Ensures responsiveness.
+line-height → Improves readability.
