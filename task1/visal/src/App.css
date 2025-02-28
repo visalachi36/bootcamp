@@ -1,0 +1,15 @@
+/* src/components/HelloWorld.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 200px;
+  width: 1000px;
+  background:pink;
+}
+
+.greeting {
+  font-size: 2rem;
+  color: #333;
+}
