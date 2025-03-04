@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #1c1e29;
+  color: white;
+  padding-right: 250px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
